@@ -1,5 +1,8 @@
 import { HeroParallax } from "@/components/main/hero";
 import { About3 } from "@/components/main/about";
+import { ZoomParallax } from "@/components/main/zoom-parallax";
+import { Testimonials } from "@/components/main/testimonials";
+import { Pricing } from "@/components/main/pricing";
 
 export default function Home() {
   const products = [
@@ -95,6 +98,37 @@ export default function Home() {
     },
   ];
 
+  const zoomImages = [
+    {
+      src: "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=800&q=80",
+      alt: "병원 내부 1",
+    },
+    {
+      src: "https://images.unsplash.com/photo-1538108149393-fbbd81895907?w=800&q=80",
+      alt: "병원 내부 2",
+    },
+    {
+      src: "https://images.unsplash.com/photo-1519494080410-f9aa76cb4283?w=800&q=80",
+      alt: "병원 내부 3",
+    },
+    {
+      src: "https://images.unsplash.com/photo-1516549655169-df83a0774514?w=800&q=80",
+      alt: "병원 내부 4",
+    },
+    {
+      src: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&q=80",
+      alt: "병원 내부 5",
+    },
+    {
+      src: "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=800&q=80",
+      alt: "병원 내부 6",
+    },
+    {
+      src: "https://images.unsplash.com/photo-1538108149393-fbbd81895907?w=800&q=80",
+      alt: "병원 내부 7",
+    },
+  ];
+
   return (
     <>
       <HeroParallax products={products} />
@@ -111,6 +145,9 @@ export default function Home() {
         ]}
         companiesTitle="믿고 선택한 병·의원"
       />
+      <ZoomParallax images={zoomImages} />
+      <Testimonials />
+      <Pricing />
     </>
   );
 }

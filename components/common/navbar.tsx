@@ -40,9 +40,9 @@ export const Navbar = () => {
             <Image
               src="/image/common/logo.webp"
               alt="MEDWEB Logo"
-              width={176}
-              height={18}
-              className="h-10 w-auto"
+              width={146}
+              height={15}
+              className="w-[146px] h-auto"
               priority
             />
           </Link>
